@@ -12,6 +12,7 @@
 .header-contacts-list {
   display: flex;
   align-items: center;
+  display: none;
 }
 .header__logo {
   margin-right: 93px;
@@ -71,4 +72,105 @@
   .header-contacts-list__link:focus & {
     fill: var(--links-text-color);
   }
+}
+.menu-btn {
+  margin-left: auto;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--main-background-color);
+  padding-top: 10px;
+  padding-bottom: 48px;
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--main-background-color);
+}
+.menu-close__icon {
+  .menu-close-btn:hover &,
+  .menu-close-btn:focus & {
+    fill: var(--links-text-color);
+  }
+}
+.mob-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--tittle-text-color);
+  &:hover,
+  &:focus {
+    color: var(--links-text-color);
+  }
+}
+.mob-contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-contacts-list__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--tittle-text-color);
+  &:hover,
+  &:focus {
+    color: var(--links-text-color);
+  }
+}
+.mob-contacts-list__mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--links-text-color);
+  }
+}
+
+.mob-social-list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+.mob-social-list__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--links-text-color);
+  &::after {
+    content: "";
+    height: 1px;
+    width: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+.mob-menu-top {
+  margin-bottom: auto;
+}
+.mob-menu.is-hidden {
+  left: 100%;
 }
