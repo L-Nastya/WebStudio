@@ -155,6 +155,7 @@
   background-color: var(--main-background-color);
   padding-top: 10px;
   padding-bottom: 48px;
+  overflow: hidden;
   .container {
     width: 100vw;
     height: 100%;
@@ -234,22 +235,21 @@
   }
 }
 .mob-social-list__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+.mob-social-list__link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--links-text-color);
-  &::after {
-    content: "";
-    height: 0px;
-    width: 22px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    // transform: rotate(90deg);
-  }
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .mob-menu-bottom {
   margin-top: auto;
 }
