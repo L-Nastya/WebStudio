@@ -150,17 +150,26 @@
         <ul class="list examples-list">
           <li class="examples-list__item">
               <div class="examples-wrap">
-              <img src="./images/picture1.jpg" alt="example of work" width="370">
+                      <img srcset="
+                      ./images/examples-img/desk-picture-1-1x.jpg 1x,
+                      ./images/examples-img/desk-picture-1-2x.jpg 2x"
+                    src="./images/examples-img/desk-picture-1-1x.jpg" alt="пример работы" width="370" >
               <p class="examples-wrap__text">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p></div>
         </li>
           <li class="examples-list__item">
               <div class="examples-wrap">
-              <img src="./images/picture2.jpg" alt="example of work" width="370">
+                      <img srcset="
+                      ./images/examples-img/desk-picture-2-1x.jpg 1x,
+                      ./images/examples-img/desk-picture-2-2x.jpg 2x" 
+                    src="./images/examples-img/desk-picture-2-1x.jpg" alt="пример работы" width="370">
               <p class="examples-wrap__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></div>
         </li>
           <li class="examples-list__item">
               <div class="examples-wrap">
-              <img src="./images/picture3.jpg" alt="example of work" width="370">
+                      <img srcset="
+                      ./images/examples-img/desk-picture-3-1x.jpg 1x,
+                      ./images/examples-img/desk-picture-3-2x.jpg 2x"
+                    src="./images/examples-img/desk-picture-3-1x.jpg" alt="пример работы" width="370">
             <p class="examples-wrap__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p></div>
         </li>
         </ul>
@@ -173,7 +182,26 @@
         <h2 class="team__title title">Наша команда</h2>
         <ul class="list team-list">
             <li class="team-list__item">
-                <img class="team-list__photo" src="./images/man1.jpg" alt="man on the photo" width="270">
+                <picture>
+                      <source
+                      srcset="./images/team-img/desk-man-1-1x.jpg 1x,
+                              ./images/team-img/desk-man-1-2x.jpg 2x" 
+                    
+                      media="(min-width: 1200px)"/>
+
+                      <source
+                      srcset="./images/team-img/tab-man-1-1x.jpg 1x,
+                              ./images/team-img/tab-man-1-2x.jpg 2x" 
+                    
+                      media="(min-width: 768px)"/>
+
+                      <source
+                      srcset="./images/team-img/mob-man-1-1x.jpg 1x,
+                              ./images/team-img/mob-man-1-2x.jpg 2x" 
+                    
+                      media="(min-width: 320px)"/>
+                      <img src="./images/team-img/desk-man-1-1x.jpg" alt="член команды на фото">
+                  </picture>
                 <div class="team-information">
                <h3 class="team-information__tittles team-styles">Игорь Демьяненко</h3>
                 <p class="team-information__text team-styles"> <span lang="en">Product Designer</span></p>
@@ -210,7 +238,26 @@
             </div>
             </li>
             <li class="team-list__item">
-                <img class="team-list__photo" src="./images/woman.jpg" alt="woman on the photo" width="270">
+                <picture>
+                      <source
+                      srcset="./images/team-img/desk-woman-1x.jpg 1x,
+                              ./images/team-img/desk-woman-2x.jpg 2x" 
+                    
+                      media="(min-width: 1200px)"/>
+
+                      <source
+                      srcset="./images/team-img/tab-woman-1x.jpg 1x,
+                              ./images/team-img/tab-woman-2x.jpg 2x" 
+                    
+                      media="(min-width: 768px)"/>
+
+                      <source
+                      srcset="./images/team-img/mob-woman-1x.jpg 1x,
+                              ./images/team-img/mob-woman-2x.jpg 2x" 
+                    
+                      media="(min-width: 320px)"/>
+                      <img src="./images/team-img/desk-woman-1x.jpg" alt="член команды на фото">
+                  </picture>
                 <div class="team-information">
                 <h3 class="team-information__tittles team-styles" >Ольга Репина</h3>
                 <p class="team-information__text team-styles"> <span lang="en">Frontend Developer</span></p>
@@ -247,7 +294,26 @@
                 </div>
             </li>
             <li class="team-list__item">
-                <img class="team-list__photo" src="./images/man2.jpg" alt="man on the photo" width="270">
+                <picture>
+                      <source
+                      srcset="./images/team-img/desk-man-2-1x.jpg 1x,
+                              ./images/team-img/desk-man-2-2x.jpg 2x" 
+                    
+                      media="(min-width: 1200px)"/>
+
+                      <source
+                      srcset="./images/team-img/tab-man-2-1x.jpg 1x,
+                              ./images/team-img/tab-man-2-2x.jpg 2x" 
+                    
+                      media="(min-width: 768px)"/>
+
+                      <source
+                      srcset="./images/team-img/mob-man-2-1x.jpg 1x,
+                              ./images/team-img/mob-man-2-2x.jpg 2x" 
+                    
+                      media="(min-width: 320px)"/>
+                      <img src="./images/team-img/desk-man-2-1x.jpg" alt="член команды на фото">
+                  </picture>
                 <div class="team-information">
                 <h3 class="team-information__tittles team-styles" >Николай Тарасов</h3>
                 <p class="team-information__text team-styles"><span  lang="en">Marketing</span></p>
@@ -284,9 +350,28 @@
                 </div>
             </li>
             <li class="team-list__item">
-                <img class="team-list__photo" src="./images/man3.jpg" alt="man on the photo" width="270">
+                <picture>
+                      <source
+                      srcset="./images/team-img/desk-man-3-1x.jpg 1x,
+                              ./images/team-img/desk-man-3-2x.jpg 2x" 
+                    
+                      media="(min-width: 1200px)"/>
+
+                      <source
+                      srcset="./images/team-img/tab-man-3-1x.jpg 1x,
+                              ./images/team-img/tab-man-3-2x.jpg 2x" 
+                    
+                      media="(min-width: 768px)"/>
+
+                      <source
+                      srcset="./images/team-img/mob-man-3-1x.jpg 1x,
+                              ./images/team-img/mob-man-3-2x.jpg 2x" 
+                    
+                      media="(min-width: 320px)"/>
+                      <img src="./images/team-img/desk-man-3-1x.jpg" alt="член команды на фото">
+                  </picture>
                 <div class="team-information">
-                <h3 class="team-information__tittles team-styles" >Михаил Ермаков</h3>
+                <h3 class="team-information__tittles team-styles">Михаил Ермаков</h3>
                 <p class="team-information__text team-styles"> <span lang="en">UI Designer</span></p>
                 <ul class="masters-social-list list">
                     <li class="masters-social-list__item">
