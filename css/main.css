@@ -731,8 +731,11 @@ body {
   }
 }
 
-.team-information {
-  background-color: var(--main-background-color);
+@media screen and (min-width: 320px) {
+  .team-information {
+    background-color: var(--main-background-color);
+    padding: 15px 45px 15px 45px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -753,9 +756,17 @@ body {
   }
 }
 
-.team-information__text {
-  color: var(--primary-text-color);
-  margin-bottom: 16px;
+@media screen and (min-width: 320px) {
+  .team-information__text {
+    color: var(--primary-text-color);
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-information__text {
+    margin-bottom: 16px;
+  }
 }
 
 .masters-social-list {

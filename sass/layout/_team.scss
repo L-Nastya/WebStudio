@@ -28,7 +28,11 @@
   }
 }
 .team-information {
-  background-color: var(--main-background-color);
+  @media screen and (min-width: 320px) {
+    background-color: var(--main-background-color);
+    padding: 15px 45px 15px 45px;
+  }
+
   @media screen and (min-width: 480px) {
     padding: 30px 122px 24px 122px;
   }
@@ -40,8 +44,13 @@
   }
 }
 .team-information__text {
-  color: var(--primary-text-color);
-  margin-bottom: 16px;
+  @media screen and (min-width: 320px) {
+    color: var(--primary-text-color);
+    margin-bottom: 6px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
 }
 .masters-social-list {
   display: flex;
